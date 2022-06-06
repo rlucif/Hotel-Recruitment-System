@@ -1,1 +1,21 @@
+*{
+	margin:  0;
+	padding:  0;
+	box-sizing: border-box;
+}
 
+.full-page{
+	height: 100vh;
+	width: 100%;
+	background-image: Linear-;linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(images/sign.jpg);
+	position: absolute;
+}
+
+.sub-page{
+	width: 1266px;
+	height: 559px;
+	position: absolute;
+	background: ug
+	;
+	background-size: cover;
+	position: absolute;
