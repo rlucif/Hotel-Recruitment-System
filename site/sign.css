@@ -24,4 +24,57 @@ label{
 	position: relative;
 	font-size: 18px;
 	color: rgb(58,58,58);
+	top: 32px;
+	left: 5px;
+	transition: .3s;
+	z-index: -1;
+}
+.label-section{
+	position: relative;
+	font-size: 13px;
+	color: rgb(82, 82, 82);
+	top: 5px;
+	left: 5px;
+}
+button{
+	border: none;
+	background-color: dodgerblue;
+	color: #fff;
+	font-weight: 500;
+	padding: 10px;
+	width: 100px;
+	border-radius: 30px;
+	margin-left: 75%;
+	transition: .5s;
+	transform: translate(0px,0px);
+}
+button:hover{
+	box-shadow: 0px 8px 15px -10px rgb(61, 61, 61);
+	transform: rgb(3,48,197);
+}
+.links{
+	font-size: 14px;
+	color: rgb(3, 48, 197);
+}
+#overlay{
+	background-color: #fff;
+	height: 550px;
+	width: 600px;
+	position: absolute;
+	transform: translate(0px,-25px);
+	border-radius: 25px;
+	background-image: url(img/sign.jpg);
+	transition: .5s;
+}
+
+@media only screen and(max-width: 600px){
+	body{
+		background-color: lightblue;
+	}
+	#overlay, #signUp{
+		display: none;
+	}
+	button{
+		margin-left: 65%;
+	}
 }
