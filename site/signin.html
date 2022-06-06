@@ -1,78 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign In</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" intergrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonumous">
+    <link rel="stylesheet" type="text/css" href="sign.css">
 </head>
 <body>
-    <div class="full-page">
-    	<div class="navbar">
-            <div>
-                 <a href="#">NAME</a>
+    <div class="container">
+        <div class="row main mt-5">
+
+            <!--sign in form-->
+            <div class="col-md-6 p-5" id="signUp">
+                <h1 class="display-4 text-center">Sign Up</h1>
+
+                <form class="d-flex justify-content-center mt-4">
+                    <div class="w-75">
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="Email">
+                        </div>
+                        <div class="form-group my-4">
+                            <label for="">Password</label>
+                            <input type="Password">
+                        </div>
+                        <button type="submit">Register</button>
+                        <div class="d-flex justify-content-center mt-5">
+                            <a class="links" href="#" id="loginLink">Already have an account</a>
+                        </div>
+                    </div>
+                </form>
+
             </div>
-            <nav>
-                <ul id='MenuItems'>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>About Us</a></li>
-                        <li><a href='#'>Search Jobs</a></li>
-                        <li><a href='#'>Contact</a></li>
-                        <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
-                </ul>
-            </nav>
-        </div>
-        <div id='login-form'class='login-page'>
-            <div class="form-box">
-                <div class='button-box'>
-                    <div id='btn'></div>
-                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
-                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
-                </div>
-                <form id='login' class='input-group-login'>
-                    <input type='text'class='input-field'placeholder='Email Id' required >
-            <input type='password'class='input-field'placeholder='Enter Password' required>
-            <input type='checkbox'class='check-box'><span>Remember Password</span>
-            <button type='submit'class='submit-btn'>Log in</button>
-         </form>
-         <form id='register' class='input-group-register'>
-             <input type='text'class='input-field'placeholder='First Name' required>
-             <input type='text'class='input-field'placeholder='Last Name ' required>
-             <input type='email'class='input-field'placeholder='Email Id' required>
-             <input type='password'class='input-field'placeholder='Enter Password' required>
-             <input type='password'class='input-field'placeholder='Confirm Password'  required>
-             <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
-                    <button type='submit'class='submit-btn'>Register</button>
-             </form>
+
+            <!--login form-->
+            <div class="col-md-6 p-5" id="login">
+                <h1 class="display-4 text-center">Login</h1>
+                <form class="d-flex justify-content-center mt-4">
+                    <div class="w-75">
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="email">
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        var x=document.getElementById('login');
-        var y=document.getElementById('register');
-        var z=document.getElementById('btn');
-        function register()
-        {
-            x.style.left='-400px';
-            y.style.left='50px';
-            z.style.left='110px';
-        }
-        function login()
-        {
-            x.style.left='50px';
-            y.style.left='450px';
-            z.style.left='0px';
-        }
-    </script>
-    <script>
-        var modal = document.getElementById('login-form');
-        window.onclick = function(event) 
-        {
-            if (event.target == modal) 
-            {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
