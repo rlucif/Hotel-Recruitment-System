@@ -1,3 +1,4 @@
+/*Change of Navigation bar on Scroll */
 let navbarDiv = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     if(document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
@@ -6,6 +7,8 @@ window.addEventListener('scroll', () => {
         navbarDiv.classList.remove('navbar-cng');
     }
 });
+
+
 const navbarCollapseDiv = document.getElementById('navbar-collapse');
 const navbarShowBtn = document.getElementById('navbar-show-btn');
 const navbarCloseBtn = document.getElementById('navbar-close-btn');
