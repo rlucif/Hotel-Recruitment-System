@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Jobs</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/utility.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<style>
+		.to-top {
+			background: none;
+			margin: 0;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			z-index: 100;
+			display: none;
+			text-decoration: none;
+			color: #1ec6b6;
+			background-color: transparent;
+		}
+		
+		.to-top i{
+			font-size: 60px;
+		}
+ </style>
+</head>
+<body>
+	<!--navigation bar-->
+	<section id="top">
+		<nav class="navbar">
+			<div class="container flex">
+				<a href="home.html" class="site-brand">
+					Hotel<span>Recruit</span>
+				</a>
+				<button type="button" id="navbar-show-btn" class="flex">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div id="navbar-collapse">
+					<button type="button" id="navbar-close-btn" class="flex">
+						<i class="fas fa-times"></i>
+					</button>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="home.html" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="signin.html" class="nav-link">Sign In/Up</a>
+						</li>
+						<li class="nav-item">
+							<a href="jobs.html" class="nav-link">Jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="Gallery.html">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a href="Apply.html">Apply</a>
+						</li>
+						<li class="nav-item">
+							<a href="contact.html" class="nav-link">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<!--header-->
+	<header class="flex">
+		<div class="container">
+			<div class="header-form">
+				<h2>Choose Your Dream Job</h2>
+				<form class="flex">
+					<input type="text" class="form-control" placeholder="Search Here">
+					<input type="submit" class="btn" value="Search">
+				</form>
+			</div>
+		</div>
+	</header>
+	<section id="jobs-list">
+		<div>
+			<ul>
+				<li>
+					<div>
+						<div class="job-heading">
+							<a href="#">Receptionist</a>
+						</div>
+						<p class="job-location">Location</p>
+						<p>
+							A  Receptionist supports the Reception Manager to ensure that Team Members are prepared and well-informed to deliver our Guests an exceptional experience from check-in through check-out.
+						</p>
+					</div>
+				</li>
+				<li>
+					<div>
+						<div class="job-heading">
+							<a href="#">Bartender</a>
+						</div>
+						<p class="job-location">Location</p>
+						<p>
+							WELCOME TO A WORLD OF OPPORTUNITIES - What makes Hilton Wembley unique, is the sense of belonging and teamwork shared throughout all our departments. This hotel is the #choiceofchampions – one d
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="">
+						<div class="job-heading">
+							<a href="#">Event Planner</a>
+						</div>
+						<p class="job-location">Location</p>
+						<p class="job-des">
+							HILTON COBHAM - We are Hilton we are hospitality. Would you like a career with a company voted number 1 in great places to work in hospitality in the UK? Then this could be the opportunity for you.
+						</p>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+
+	</section>
+	<footer class="py-4">
+		<div class="container footer-row">
+			<div class="footer-item">
+				<a href="home.html" class="site-brand">
+					Hotel<span>Recruit</span>
+				</a>
+				<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa s</p>
+			</div>
+			<div class="footer-item">
+				<h2>Follow us on:</h2>
+				<ul class="social-links">
+					<li>
+						<a href="#">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-item">
+				<h2>Popular Jobs:</h2>
+				<ul>
+					<li><a href="#">Front Desk Service Agent</a></li>
+					<li><a href="#">Front Office Manager</a></li>
+					<li><a href="#">Housekeeping Supervisor</a></li>
+					<li><a href="#">Waiter</a></li>
+				</ul>
+			</div>
+
+			<div class="subscribe-form footer-item">
+				<h2>Subscribe for Future Updates</h2>
+				<form class="flex">
+					<input type="email" placeholder="Enter Email" class="form-control">
+					<input type="submit" class="btn" value="Subscribe">
+				</form>
+			</div>
+		</div>
+	</footer>
+	
+	<a class="to-top" href="#" style="display: inline;">
+		<i class="bi bi-caret-up-fill"></i>
+	</a>
+	<script src="js/home.js"></script>
+	<script>
+		const toTop = document.querySelector(".to-top");
+		window.addEventListener("scroll", () => {
+			if (window.pageYOffset > 100) {
+				toTop.classList.add("active");
+			} else {
+				toTop.classList.remove("active");
+			}
+		});
+	</script>
+	<!--<script>
+		//back to top btn//
+		jQuery(document).ready(function() {
+		    var offset = 250;
+		    var duration = 300;
+		    jQuery(window).scroll(function() {
+		        if (jQuery(this).scrollTop() > offset) {
+		            jQuery('.back-to-top').fadeIn(duration);
+		        } else {
+		            jQuery('.back-to-top').fadeOut(duration);
+		        }
+		    });
+		    jQuery('.back-to-top').click(function(event) {
+		        event.preventDefault();
+		        jQuery('html, body').animate({scrollTop: 0},duration);
+		        return false;
+		    });
+		});
+	</script>-->
+</body>
+</html>
