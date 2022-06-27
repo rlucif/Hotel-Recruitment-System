@@ -4,6 +4,9 @@
     --dark: #0e1010;
     --trans: all 0.3s ease-in-out;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navbar{
     position: fixed;
     top: 0;
@@ -556,4 +559,24 @@ footer .site-brand{
     font-size: 1.2rem;
     display: block;
     margin-bottom: 1rem;
+}
+
+/*Job*/
+.job-heading a{
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: "Helvetica Neue", sans-serif;
+    display: block;
+    padding-bottom: 0.2rem;
+    padding-top: 1rem;
+    max-width: 450px;
+    margin-right: auto;
+    line-height: 1.7;
+}
+.job-heading a:hover{
+    color: #595959;
+    opacity: 1;
+}
+.job-location{
+    display: block;
 }

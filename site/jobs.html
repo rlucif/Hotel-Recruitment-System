@@ -27,11 +27,13 @@
 			color: #1ec6b6;
 			background-color: transparent;
 		}
-		
+		.to-top:hover{
+			color: #17968A;
+		}
 		.to-top i{
 			font-size: 60px;
 		}
- </style>
+	</style>
 </head>
 <body>
 	<!--navigation bar-->
@@ -56,16 +58,16 @@
 							<a href="signin.html" class="nav-link">Sign In/Up</a>
 						</li>
 						<li class="nav-item">
+							<a href="profile.html" class="nav-link">Profile</a>
+						</li>
+						<li class="nav-item">
 							<a href="jobs.html" class="nav-link">Jobs</a>
 						</li>
 						<li class="nav-item">
-							<a href="Gallery.html">Gallery</a>
+							<a href="apply.html" class="nav-link">Apply</a>
 						</li>
 						<li class="nav-item">
-							<a href="Apply.html">Apply</a>
-						</li>
-						<li class="nav-item">
-							<a href="contact.html" class="nav-link">Contact Us</a>
+							<a href="contact.html" class="nav-link">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -76,7 +78,7 @@
 	<header class="flex">
 		<div class="container">
 			<div class="header-form">
-				<h2>Choose Your Dream Job</h2>
+				<h2>Search Your Dream Job</h2>
 				<form class="flex">
 					<input type="text" class="form-control" placeholder="Search Here">
 					<input type="submit" class="btn" value="Search">
@@ -131,7 +133,7 @@
 				<a href="home.html" class="site-brand">
 					Hotel<span>Recruit</span>
 				</a>
-				<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptates maiores nam vitae iusto. Placeat rem sint voluptas natus exercitationem autem quod neque, odit laudantium reiciendis ipsa s</p>
+				<p class="text">Hotel industry is very popular, Hence, there are lots of well-educated people willing to do any kinds of jobs. Due to the strong competition for labor, hotels face difficulties in recruitment and retention, especially when hotel jobs are viewed as a high level wage payment. Therefore, to hire the local employees, the hotel must consider very carefully. And we are willing to set you up with the hotels directly.</p>
 			</div>
 			<div class="footer-item">
 				<h2>Follow us on:</h2>
@@ -178,7 +180,7 @@
 		<i class="bi bi-caret-up-fill"></i>
 	</a>
 	<script src="js/home.js"></script>
-	<script>
+	<script type="text/javascript">
 		const toTop = document.querySelector(".to-top");
 		window.addEventListener("scroll", () => {
 			if (window.pageYOffset > 100) {
