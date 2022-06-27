@@ -213,6 +213,13 @@ button::-moz-focus-inner,
   border-style: none;
 }
 
+textarea[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='text']{
+  color: #000;
+}
+
 input[type='radio'],
 input[type='checkbox'] {
   box-sizing: border-box;
@@ -1231,10 +1238,6 @@ button.bg-white:focus {
   color: #fff !important;
 }
 
-.text-white {
-  color: #fff !important;
-}
-
 a.text-white:hover,
 a.text-white:focus {
   color: #e6e6e6 !important;
@@ -1278,7 +1281,9 @@ a.text-white:focus {
   body {
     min-width: 992px !important;
   }
-
+  .container {
+    min-width: 992px !important;
+  }
 }
 
 figcaption,
