@@ -45,3 +45,28 @@ function updateProgressbar() {
   progress.style.width =
     ((progressActive.length - 1) / (progressSteps.length - 1)) * 100 + "%";
 }
+/*Job-Seeker/Provider*/
+/*function job(){
+  var selectvalue= $('input[name=Jobs]:checked','#job').val();
+  if (selectvalue=="Job-Seeker"){
+    window.open("apply_s.html");
+    return true;
+  }
+  else if (selectvalue=="Job-Provider"){
+    window.open("apply_p.html");
+    return true;
+  }
+  return false;
+};*/
+
+function jobs2(){
+  var rd1=document.getElementById("job1");
+  var rd2=document.getElementById("job2");
+
+  if (rd1.checked==true)
+    window.open("apply_seeker.html");
+  else if (rd2.checked==true)
+    window.open("apply_provider.html");
+  else
+    alert("Nothing selected");
+}

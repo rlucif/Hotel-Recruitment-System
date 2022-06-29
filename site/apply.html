@@ -96,18 +96,7 @@
 				<div class="row">
 					<div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
 						<div class="card card-profile shadow">
-							<div class="progressbar">
-						        <div class="progress" id="progress"></div>
-						        
-						        <div
-						          class="progress-step progress-step-active"
-						          data-title="Personal information"
-						        ></div>
-						        <div class="progress-step" data-title="Attachment"></div>
-						        <div class="progress-step" data-title="Basic Profile"></div>
-						        <div class="progress-step" data-title="Experience"></div>
-						        <div class="progress-step" data-title="Final Submission"></div>
-							</div>
+							
 						</div>
 					</div>
 					<div class="col-xl-8 order-xl-1">
@@ -115,142 +104,14 @@
 							
 							<div class="card-body">
 								<form>
-									<!--steps-->
-									<div class="form-step form-step-active">
 										<div class="card-header bg-white border-0">
 											<div class="row align-items-center">
-												<h3 class="mb-0">Personal Information</h3>
+												<h3 class="mb-0">Are you a Job seeker or Provider</h3>
 											</div>
+											<input type="radio" id="job1" onclick="job()" name="Jobs" value="Job-Seeker"/>Job Seeker
+											<input type="radio" id="job2" onclick="job()" name="Jobs" value="Job-Provider"/>Job Provider
 										</div>
-							        	<div class="input-group">
-											<label for="input-first-name">First Name</label>
-											<input type="text" name="first-name" id="first-name" />
-							        	</div>
-						        		<div class="input-group">
-											<label for="input-middle-name">Middle Name</label>
-											<input type="text" name="middle-name" id="middle-name" />
-						        		</div>
-						        		<div class="input-group">
-											<label for="input-last-name">Last Name</label>
-											<input type="text" name="last-name" id="last-name" />
-						        		</div>
-						        		<div class="input-group">
-											<label for="input-country">Country/Region</label>
-											<input type="text" name="country" id="country" />
-						        		</div>
-						        		<div class="input-group">
-											<label for="input-city">City</label>
-											<input type="text" name="city" id="city" />
-						        		</div>
-						        		<div class="input-group">
-											<label for="input-postal">Zip/Postal Code</label>
-											<input type="text" name="input-postal-code" id="input-postal-code" />
-						    		    </div>
-						    		    <div class="input-group">
-											<label for="input-number">Celluar/Mobile Number</label>
-											<input type="text" name="input-number" id="input-number-mobile" />
-						        		</div>
-										<div class="input-group">
-											<label for="input-email">Email Address</label>
-											<input type="text" name="input-email" id="input-email-address" />
-						        		</div>
-						        		<div class="pl-lg-4">
-											<div class="form-group focused">
-												<label>About You</label>
-												<textarea rows="4" type="text" class="form-control form-control-alternative" placeholder="A few words about you"></textarea>
-											</div>
-										</div>
-						        		<div class="">
-											<a href="#" class="btn btn-next width-50 ml-auto">Save and Continue</a>
-						        		</div>
-						    		</div>
-									<div class="form-step">
-										<div class="card-header bg-white border-0">
-											<div class="row align-items-center">
-												<h3 class="mb-0">Attachments</h3>
-											</div>
-										</div>
-								        <div class="input-group">
-								        	<h3>Upload Your Resume</h3>
-											<label for="input-attachments">Tell us more about yourself. In this section you may attach additional files to support your application. This could include a cover letter, CV, references, and any other information that you think is relevant. Once you attach a file, you can easily overwrite it by attaching another file with exactly the same name and extension.</label>
-											<input type="file" name="input-attachments" id="input-attachments-cv" />
-								        </div>
-								        <div class="btns-group">
-											<a href="#" class="btn btn-prev">Previous</a>
-											<a href="#" class="btn btn-next">Save and Continue</a>
-								        </div>
-									</div>
-									<div class="form-step">
-										<div class="card-header bg-white border-0">
-											<div class="row align-items-center">
-												<h3 class="mb-0">Basic Profile</h3>
-											</div>
-										</div>
-								        <div class="input-group">
-								        	<h3 class="h3line">Basic Profile Information</h3>
-								        	<p>Please indicate your preferences and/or expectations in the fields below.</p><br>
-											<label for="input-salary" class="h3line">Minimum Annual Salary</label>
-											<input type="number" name="input-salary" id="input-salary-number" />
-											<label for="input-currency">Currency</label>
-											<input type="text" name="input-currency" id="input-currency-number">
-								        </div>
-								        
-								        <div class="btns-group">
-								          <a href="#" class="btn btn-prev">Previous</a>
-								          <a href="#" class="btn btn-next">Save and Continue</a>
-								        </div>
-									</div>
-									<div class="form-step">
-										<div class="card-header bg-white border-0">
-											<div class="row align-items-center">
-												<h3 class="mb-0">Experience</h3>
-											</div>
-										</div>
-								        <div class="input-group">
-								        	<h3>Work Experience</h2>
-											<label for="input-experience">List your work experiences below in order of relevance for the job opportunity.  You must specify at least 1 work experience entry.</label>
-											<h3 class="h3line">Work Experience 1</h3>
-											<label for="input-month">Start Months</label>
-											<input type="month" name="input-month" id="input-experience-month">
-											<label for="input-year">Start Year</label>
-											<input type="number" min="1900" max="2022" name="input-year" id="input-experience-year">
-											<hr class="my-4">
-											<label for="input-month-end">End Months</label>
-											<input type="month" name="input-month-end" id="input-experience-month-end">
-											<label for="input-year-end">End Year</label>
-											<input type="number" min="1900" max="2022" name="input-year-end" id="input-experience-year-end">
-											<label for="input-job">Job Description</label>
-											<input type="text" name="input-job" id="input-job-description" placeholder="About the Job name/type">
-											<hr >
-											
-											<h3 class="h3line">Work Experience 2</h3>
-											<label for="input-month2">Start Months</label>
-											<input type="month" name="input-month2" id="input-experience-month2">
-											<label for="input-year2">Start Year</label>
-											<input type="number" min="1900" max="2022" name="input-year2" id="input-experience-year2">
-											<hr>
-											<label for="input-month-end2">End Months</label>
-											<input type="month" name="input-month-end2" id="input-experience-month-end2">
-											<label for="input-year-end2">End Year</label>
-											<input type="number" min="1900" max="2022" name="input-year-end" id="input-experience-year-end2">
-											<label for="input-job">Job Description</label>
-											<input type="text" name="input-job2" id="input-job-description2" placeholder="About the Job name/type">
-								        </div>
-								        <div class="btns-group">
-											<a href="#" class="btn btn-prev">Previous</a>
-											<a href="#" class="btn btn-next">Save and Continue</a>
-								        </div>
-									</div>
-									<div class="form-step">
-										<h3>Final Submission</h3>
-										<p class="text">
-											The following information will be submitted after you click the Submit button.
-										</p>
-										<div class="btns-group">
-											<a href="#" class="btn btn-prev">Previous</a>
-											<a href="jobs.html" class="btn btn-next">Submit</a>
-								        </div>
-									</div>
+										<button onclick="jobs2()" class="btn">Proceed</button>
 								</form>
 							</div>
 						</div>
