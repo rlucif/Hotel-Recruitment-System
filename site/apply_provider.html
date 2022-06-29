@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Apply</title>
+	<!-- font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/apply.css">
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/utility.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<style>
+		.to-top {
+			background: none;
+			margin: 0;
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			width: 70px;
+			height: 70px;
+			z-index: 100;
+			display: none;
+			text-decoration: none;
+			color: #1ec6b6;
+			background-color: transparent;
+		}
+		.to-top:hover{
+			color: #17968A;
+		}
+		.to-top i{
+			font-size: 60px;
+		}
+	</style>
+</head>
+<body>
+	<!--navbar-->
+	<nav class="navbar">
+		<div class="container flex">
+			<a href="home.html" class="site-brand">
+				Hotel<span>Recruit</span>
+			</a>
+			<button type="button" id="navbar-show-btn" class="flex">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div id="navbar-collapse">
+				<button type="button" id="navbar-close-btn" class="flex">
+					<i class="fas fa-times"></i>
+				</button>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="home.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="signin.html" class="nav-link">Sign In/Up</a>
+					</li>
+					<li class="nav-item">
+						<a href="profile.html" class="nav-link">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a href="jobs.html" class="nav-link">Jobs</a>
+					</li>
+					<li class="nav-item">
+						<a href="Apply.html" class="nav-link">Apply</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!--profile-->
+		<div class="main-content">
+			<!--header-->
+			<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(img/profile.jpg); background-size: cover; background-position: center top;">
+				<!--mask-->
+				<span class="mask bg-gradient-default opacity-8"></span>
+				<!--header-content-->
+				<div class="container-fluid d-flex align-items-center">
+					<div class="row">
+						<div class="col-lg-7 col-md-10">
+							<h1 class="display-2 text-white">Application Form</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--content-->
+			<div class="container-fluid mt--7">
+				<div class="row">
+					<div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+						<div class="card card-profile shadow">
+							<div class="progressbar">
+						        <div class="progress" id="progress"></div>
+						        
+						        <div class="progress-step progress-step-active"
+						          data-title="Job"
+						        ></div>
+						        <div class="progress-step" data-title="Description"></div>
+						        <div class="progress-step" data-title="Salary"></div>
+						        <div class="progress-step" data-title="Final Submission"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-8 order-xl-1">
+						<div class="card bg-secondary shadow">
+							
+							<div class="card-body">
+								<form>
+									<!--steps-->
+									<div class="form-step form-step-active">
+										<div class="card-header bg-white border-0">
+											<div class="row align-items-center">
+												<h3 class="mb-0">About the Job</h3>
+											</div>
+										</div>
+							        	<div class="input-group">
+											<label for="input-title">Job Title</label>
+											<input type="text" name="input-title" id="input-title-job" />
+							        	</div>
+						        		<div class="input-group">
+											<label for="input-location">Input Job Location</label>
+											<input type="text" name="input-location" id="input-location-job" />
+						        		</div>
+						        		<div class="input-group">
+											<label for="input-hotel">Hotel Name</label>
+											<input type="text" name="input-hotel" id="input-hotel-name" />
+						        		</div>
+						        		<div class="input-group">
+											<label for="input-country">Country/Region</label>
+											<input type="text" name="country" id="country" />
+						        		</div>
+										<div class="input-group">
+											<label for="input-email">Email Address</label>
+											<input type="text" name="input-email" id="input-email-address" />
+						        		</div>
+						        		<div class="">
+											<a href="#" class="btn btn-next width-50 ml-auto">Save and Continue</a>
+						        		</div>
+						    		</div>
+									<div class="form-step">
+										<div class="card-header bg-white border-0">
+											<div class="row align-items-center">
+												<h3 class="mb-0">Description</h3>
+											</div>
+										</div>
+								        <div class="input-group">
+								        	<div class="pl-lg-4">
+												<div class="form-group focused">
+													<label>About the Job</label>
+													<textarea rows="6" type="text" class="form-control form-control-alternative h3line" placeholder="A few words about the Job/post"></textarea>
+												</div>
+											</div>
+								        </div>
+								        <div class="btns-group">
+											<a href="#" class="btn btn-prev">Previous</a>
+											<a href="#" class="btn btn-next">Save and Continue</a>
+								        </div>
+									</div>
+									<div class="form-step">
+										<div class="card-header bg-white border-0">
+											<div class="row align-items-center">
+												<h3 class="mb-0">Salary</h3>
+											</div>
+										</div>
+								        <div class="input-group">
+								        	<h3 class="h3line">Minimun Wages</h3>
+								        	<p>Please indicate your prefered and minimun and Maximun wages.</p><br>
+											<label for="input-salary" class="h3line">Minimum Annual Salary</label>
+											<input type="number" name="input-salary" id="input-salary-number" />
+								        </div>
+								        <div class="input-group">
+								        	<label for="input-salary-max" class="h3line">Maximun Annual Salary</label>
+											<input type="number" name="input-salary-max" id="input-salary-max" />
+								        </div>
+								        <div class="input-group">
+								        	<label for="input-currency">Currency</label>
+											<input type="text" name="input-currency" id="input-currency-max">
+								        </div>
+								        <div class="btns-group">
+								          <a href="#" class="btn btn-prev">Previous</a>
+								          <a href="#" class="btn btn-next">Save and Continue</a>
+								        </div>
+									</div>
+									<div class="form-step">
+										<h3>Final Submission</h3>
+										<p class="text">
+											The following information will be submitted after you click the Submit button.
+										</p>
+										<div class="btns-group">
+											<a href="#" class="btn btn-prev">Previous</a>
+											<a href="jobs.html" class="btn btn-next">Submit</a>
+								        </div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+	<!--Footer-->
+	<footer class="py-4">
+		<div class="container footer-row">
+			<div class="footer-item">
+				<a href="home.html" class="site-brand">
+					Hotel<span>Recruit</span>
+				</a>
+				<p class="text">Hotel industry is very popular, Hence, there are lots of well-educated people willing to do any kinds of jobs. Due to the strong competition for labor, hotels face difficulties in recruitment and retention, especially when hotel jobs are viewed as a high level wage payment. Therefore, to hire the local employees, the hotel must consider very carefully. And we are willing to set you up with the hotels directly.</p>
+			</div>
+			<div class="footer-item">
+				<h2>Follow us on:</h2>
+				<ul class="social-links">
+					<li>
+						<a href="https://facebook.com" target="blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/" target="blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/?lang=en-in" target="blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-item">
+				<h2>Popular Jobs:</h2>
+				<ul>
+					<li><a href="jobs.html">Front Desk Service Agent</a></li>
+					<li><a href="jobs.html">Front Office Manager</a></li>
+					<li><a href="jobs.html">Housekeeping Supervisor</a></li>
+					<li><a href="jobs.html">Waiter</a></li>
+				</ul>
+			</div>
+
+			<div class="subscribe-form footer-item">
+				<h2>Subscribe for Future Updates</h2>
+				<form class="flex">
+					<input type="email" placeholder="Enter Email" class="form-control">
+					<input type="submit" class="btn" value="Subscribe">
+				</form>
+			</div>
+		</div>
+	</footer>
+	<a class="to-top" href="#" style="display: inline;">
+			<i class="bi bi-caret-up-fill"></i>
+	</a>
+	<script src="js/home.js"></script>
+	<script src="js/apply.js"></script>
+</body>
+</html>
